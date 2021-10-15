@@ -40,6 +40,7 @@ function CreatePost(){
                             type="text"
                             placeholder="Title"
                             name="title"
+                            className="form-control"
                             onChange={handleInputChange}
                         />
                     </div>
@@ -52,6 +53,7 @@ function CreatePost(){
                             type="text"
                             placeholder="Content"
                             name="content"
+                            className="form-control"
                             onChange={handleInputChange}
                         />
                     </div>
@@ -64,6 +66,7 @@ function CreatePost(){
                             type="text"
                             placeholder="Content"
                             name="author"
+                            className="form-control"
                             onChange={handleInputChange}
                         />
                     </div>
