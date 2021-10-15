@@ -31,51 +31,46 @@ function CreatePost(){
     }
 
     return(
-        <div className="form-control">
-            <form onSubmit={handleSubmit}>
-                <div>
-                    <div><label>Title</label></div>
-                    <div>
-                        <input
-                            type="text"
-                            placeholder="Title"
-                            name="title"
-                            className="form-control"
-                            onChange={handleInputChange}
-                        />
-                    </div>
-                </div>
-                    
-                <div>
-                    <div><label>Content</label></div>
-                    <div>
-                        <input
-                            type="text"
-                            placeholder="Content"
-                            name="content"
-                            className="form-control"
-                            onChange={handleInputChange}
-                        />
-                    </div>
-                </div>
+        <form onSubmit={handleSubmit}>
+            <div className="form-group"> 
+                <label>Title</label>
+                <input
+                    type="text"
+                    placeholder="Title"
+                    name="title"
+                    className="form-control"
+                    onChange={handleInputChange}
+                />
+            </div>
+                
+            <div className="form-group">
+                <label>Content</label>
+                
+                <input
+                    type="text"
+                    placeholder="Content"
+                    name="content"
+                    className="form-control"
+                    onChange={handleInputChange}
+                />
+                
+            </div>
 
-                <div>
-                    <div><label>Author</label></div>
-                    <div>
-                        <input
-                            type="text"
-                            placeholder="Content"
-                            name="author"
-                            className="form-control"
-                            onChange={handleInputChange}
-                        />
-                    </div>
-                </div>
-                <div className="mt-2">
-                    <button className="btn btn-primary" type="submit">Post</button>
-                </div>
-            </form>
-        </div>
+            <div className="form-group">
+                <label>Author</label>
+                <input
+                    type="text"
+                    placeholder="Content"
+                    name="author"
+                    className="form-control"
+                    onChange={handleInputChange}
+                />
+            </div>
+            <div className="mt-2">
+                <button className="btn btn-primary" type="submit">Post</button>
+            </div>
+        </form>
+        
     );
 }
 
